@@ -8,7 +8,9 @@
 
   <!--Fonts-->
   <link href="//db.onlinewebfonts.com/c/5796fb1b44e3c87b7f3d5ff57994f7b3?family=Druk+Wide+Web+Medium" rel="stylesheet" type="text/css"/>
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
 </head>
 
 
@@ -21,14 +23,96 @@
   </div>
 </header>
 
-<div id="aboutMe">
-  <h2 class="filledtxt">About me</h2>
-  <h2 class="outlinetxt">About me</h2>
+<div class="content fadeContainer" id="aboutMe">
+  <h2 class="outText">About me</h2>
+  <h2 class="fillText">About me</h2>
   <p> Hello, my name is Sam. I am a self taught Front End / Web developer actively looking for my first role in the industry. I have been writing code for the last 9 months developing my skills and putting together this portfolio. Thanks for taking the time to check me out. Dont hesistate to reach out if you would like to know anymore!</p>
-
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio molestias voluptate tempora corporis, magni error laborum vero nostrum, eligendi eum voluptatibus non ab vel itaque nobis debitis totam iste natus.</p>
 </div>
 
+<div class="content">
+  <h2 class="outText">Skills</h2>
+  <h2 class="fillText">Skills</h2>
+  <div class="skillsContainer">
+    <div class="skills">
+      <div class="circular">
+        <div class="inner"></div>
+        <div class="circle">
+          <div class="bar left">
+              <div class="wheel"></div>
+          </div>
+          <div class="bar right">
+              <div class="wheel" id="right1"></div>
+          </div>
+        </div>
+      </div>
+      <span><p>HTML</p></span>
+    </div>
+
+    <div class="skills">
+      <div class="circular">
+        <div class="inner"></div>
+        <div class="circle">
+          <div class="bar left">
+              <div class="wheel"></div>
+          </div>
+          <div class="bar right">
+              <div class="wheel" id="right2"></div>
+          </div>
+        </div>
+      </div>
+      <span><p>CSS</p></span>
+    </div>
+
+    <div class="skills">
+      <div class="circular">
+        <div class="inner"></div>
+        <div class="circle">
+          <div class="bar left">
+              <div class="wheel"></div>
+          </div>
+          <div class="bar right">
+              <div class="wheel" id="right3"></div>
+          </div>
+        </div>
+      </div>
+      <span><p>JavaScript</p></span>
+    </div>
+
+    <div class="skills">
+      <div class="circular">
+        <div class="inner"></div>
+        <div class="circle">
+          <div class="bar left">
+              <div class="wheel"></div>
+          </div>
+          <div class="bar right">
+              <div class="wheel" id="right4"></div>
+          </div>
+        </div>
+      </div>
+      <span><p>jQuery</p></span>
+    </div>
+
+    <div class="skills">
+      <div class="circular">
+        <div class="inner"></div>
+        <div class="circle">
+          <div class="bar left">
+              <div class="wheel"></div>
+          </div>
+          <div class="bar right">
+              <div class="wheel" id="right"></div>
+          </div>
+        </div>
+      </div>
+      <span><p>Git</p></span>
+    </div>
+  </div>
+</div>
+
+<div id="loading">
+  <div class="lds-dual-ring"></div>
+</div>
 
 <script src="script.js"></script>
 </body>

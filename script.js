@@ -42,3 +42,21 @@ const myObserver = new IntersectionObserver(callback, options)
 fadeContainer.forEach(container => {
   myObserver.observe(container);
 });
+
+/* skills wheels*/
+
+const skillWheels = document.querySelectorAll('.skillsContainer');
+
+observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.intersectionRatio > 0) {
+      $('div.wheel').addClass('progress');
+    } else {
+      $('div.wheel').removeClass('progress');
+    }
+  });
+});
+
+skillWheels.forEach(wheel => {
+  observer.observe(wheel);
+});
