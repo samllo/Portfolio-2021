@@ -1,6 +1,9 @@
+/*webfont - hello*/
+@import url(//db.onlinewebfonts.com/c/5796fb1b44e3c87b7f3d5ff57994f7b3?family=Druk+Wide+Web+Medium); 
 
-@import url(//db.onlinewebfonts.com/c/5796fb1b44e3c87b7f3d5ff57994f7b3?family=Druk+Wide+Web+Medium); /*webfont*/
+@font-face {font-family: "Druk Wide Web Medium"; src: url("//db.onlinewebfonts.com/t/5796fb1b44e3c87b7f3d5ff57994f7b3.eot"); src: url("//db.onlinewebfonts.com/t/5796fb1b44e3c87b7f3d5ff57994f7b3.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/5796fb1b44e3c87b7f3d5ff57994f7b3.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/5796fb1b44e3c87b7f3d5ff57994f7b3.woff") format("woff"), url("//db.onlinewebfonts.com/t/5796fb1b44e3c87b7f3d5ff57994f7b3.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/5796fb1b44e3c87b7f3d5ff57994f7b3.svg#Druk Wide Web Medium") format("svg"); }
 
+/*basic styling*/
 html, body {
   margin:0;
   overflow-x: hidden;
