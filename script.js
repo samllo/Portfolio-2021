@@ -60,3 +60,67 @@ observer = new IntersectionObserver((entries) => {
 skillWheels.forEach(wheel => {
   observer.observe(wheel);
 });
+
+/*Carousel JS*/
+$(document).ready(function(){
+  $('.carousel').slick({
+  centerMode: true,
+  slidesToShow: 3,
+  centerPadding: '0', //hides edge of 1st & 5th slides
+  dots: true,
+  arrows: true,
+  swipe: true,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        centerMode: true,
+        centerPadding: '60px',
+        slidesToShow: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        centerMode: true,
+        centerPadding: '60px',
+        slidesToShow: 1
+      }
+    }
+  ]
+  });
+});
+
+//
+$(document).ready(function() {
+  "use strict";
+  // Invoke function here
+  callMeT();
+  // define function here
+  function callMeT () {
+    $('div.slick-slide').find('ul.crslSkills').removeClass('open');
+    $('div.slick-slide').find('ul.crslSkills').addClass('notopen');
+    $('div.slick-slide').find('img.crslImgs').removeClass('open');
+    $('div.slick-slide').find('img.crslImgs').addClass('notopen');
+  }
+  // Invoke function again within the click event here
+  $('div#containerCarousel').click(callMeT);
+  $('div#containerCarousel').mouseup(callMeT);
+});
+
+// adds and removes open/notopen class if slide is in center of carousel
+$(document).ready(function() {
+  "use strict";
+  callMeTwice();
+  function callMeTwice () {
+    $('div.slick-center').find('ul.crslSkills').removeClass('notopen');
+    $('div.slick-center').find('ul.crslSkills').addClass('open');
+    $('div.slick-center').find('img.crslImgs').removeClass('notopen');
+    $('div.slick-center').find('img.crslImgs').addClass('open');
+  }
+  // Invoke your function again within the click event here
+  $('div#containerCarousel').click(callMeTwice);
+  $('div#containerCarousel').mouseup(callMeTwice);
+});
+
+

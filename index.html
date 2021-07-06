@@ -11,6 +11,15 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+
+  <!--Carousel-->
+  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+  <script type="text/javascript" src="slick/slick.js"></script>
+
+   <!--Logos-->
+   <script src="https://kit.fontawesome.com/8ae4b7406a.js" crossorigin="anonymous"></script>
+
 </head>
 
 
@@ -32,7 +41,7 @@
   </div>
 </div>
 
-<div class="content">
+<div class="content fadeContainer">
   <h2 class="outText">Skills</h2>
   <h2 class="fillText">Skills</h2>
   <div class="skillsContainer">
@@ -113,9 +122,108 @@
   </div>
 </div>
 
+<!--Carousel -->
+<div class="content fadeContainer"> 
+  <h2 class="outText">Projects</h2>
+  <h2 class="fillText">Projects</h2>
+
+  <div id="containerCarousel">
+    <div class="carousel">
+      <div class="carouselSlide"> 
+        <div class="carouselColumns">
+          <img class ="crslImgs" src="images/ShoppingListPage.png">
+          <ul class="crslSkills">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ul>
+        </div>
+        <span class="crslContent">
+          <h3>Shopping List</h3> 
+          A Shopping list / CRUD application. Utilising JavaScript to allow users to add or remove shopping list items using text input. Click to view.
+        </span>
+      </div>
+
+      <div class="carouselSlide"> 
+        <div class="carouselColumns">
+          <img class ="crslImgs" src="images/ShoppingListPage.png">
+          <ul class="crslSkills">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ul>
+        </div>
+        <span class="crslContent">
+          <h3>Shopping List</h3> 
+          A Shopping list / CRUD application. Utilising JavaScript to allow users to add or remove shopping list items using text input. Click to view.
+        </span>
+      </div>
+
+      <div class="carouselSlide"> 
+        <div class="carouselColumns">
+          <img class ="crslImgs" src="Carousel-Imgs/ShoppingListPage.png">
+          <ul class="crslSkills">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ul>
+        </div>
+        <span>
+          <h3>Slide  1</h3> 
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum modi possimus deserunt at nobis consectetur recusandae ex deleniti harum sit tempore, tempora iusto assumenda delectus, error distinctio illo vitae praesentium?
+        </span>
+      </div>
+
+      <div class="carouselSlide"> 
+        <div class="carouselColumns">
+          <img class ="crslImgs" src="Carousel-Imgs/ShoppingListPage.png">
+          <ul class="crslSkills">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ul>
+        </div>
+        <span>
+          <h3>Slide  1</h3> 
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum modi possimus deserunt at nobis consectetur recusandae ex deleniti harum sit tempore, tempora iusto assumenda delectus, error distinctio illo vitae praesentium?
+        </span>
+      </div>
+      
+    </div> 
+  </div>
+</div>
+
+<!--footer/links-->
+
+<div id="pageBottom">
+  <div class="content" id="footer">
+    <div class="logoItem"><a href="https://www.linkedin.com/in/sam-lloyd-front-end/?originalSubdomain=uk"><i class="fab fa-linkedin-in"></i></a>LinkedIn</div>
+    <div class="logoItem"><i class="fab fa-github"></i>Github</div>
+    <div class="logoItem"><i class="fab fa-free-code-camp"></i>FreeCodeCamp</div>
+    <div class="logoItem"><i class="far fa-envelope"></i>Email</div>
+    <div class="logoItem"><i class="fas fa-mobile-alt"></i>Mobile</div>
+    <div class="logoItem"><i class="far fa-file"></i>CV</div>
+  </div>
+</div>
+
+<!-- Loading wheel-->
 <div id="loading">
   <div class="lds-dual-ring"></div>
 </div>
+
+<script>
+  //sets timeout call on load
+  $(window).on('load', function () {
+    setTimeout(removeLoader, 3000);
+  }) 
+  //triggered by timoutcall, fades out loading wheel
+  function removeLoader(){
+  $( "#loading" ).fadeOut(2000, function() {
+      // fadeOut complete. Remove the loading div
+      $( "#loading" ).remove(); //makes page more lightweight 
+    });  
+  }
+</script>
 
 <script src="script.js"></script>
 </body>

@@ -3,14 +3,24 @@
 html, body {
   margin:0;
   overflow-x: hidden;
+  
 }
 
 body {
   position: relative;
+  font-family:'Roboto Mono', monospace; 
+  font-size: 1em;
+}
+
+h3{
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-size: 2em;
+  position:relative;
+  padding:0;
+  margin:0;
 }
 
 p{
-  font-family: 'Roboto Mono', monospace;
   color:rgb(77, 77, 77);
 }
 
@@ -18,9 +28,10 @@ p{
   margin:10%;
 }
 
+
 /*header styling*/
 header{
-  background-color:#f65058;;
+  background-color:#f65058;
   padding-bottom: 50vh;
 }
 #hello{
@@ -251,4 +262,126 @@ h2{
   }
 }
 
+/* Carousel styling*/
 
+#containerCarousel{
+  display: flex;
+  justify-content: center;
+}
+
+.carousel{
+  width: 100%;
+  height: 34rem;
+}
+
+.carouselSlide{
+  display: flex;
+  height: 23rem;
+  width: 40rem;
+  margin-top:4rem;
+  background-color: #f65058;
+  position: relative;
+}
+
+.carouselSlide span {
+  position: absolute;
+  padding: 1rem;
+  bottom: 0;
+  right: 0;
+}
+
+.carouselColumns{
+  display: flex;
+  margin: 1rem;
+}
+
+.crslImgs{
+  flex: 60%;
+  width:60%;
+  z-index: 2;
+}
+
+.crslSkills{
+  flex: 40%;
+  width:40%;
+  align-self: flex-end;
+  list-style-type: none;
+  padding: 0.5rem;
+}
+
+.crslContent{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.crslSkills.open{
+  color: black!important;
+  transform: translate3d(0,0,0);
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+}
+
+.crslSkills.notopen{
+  opacity:0;
+  transform: translate3d(-40%,0,0) ;
+  color:#f65058 ;
+}
+
+.crslImgs.open{
+  color: black!important;
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+  transition: all .5s ;
+}
+
+.crslImgs.notopen{
+  opacity: 0;
+  transform: translate3d(60%,0,0);
+  color:white;
+}
+
+/*Footer /Links styling*/
+
+#pageBottom{
+  background-color:#f65058;
+  bottom: 0;
+}
+
+#footer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#pageBottom .content{
+  padding-top: 3em;
+  padding-bottom: 3em;
+  margin-bottom: 0!important;
+}
+
+.logoItem{
+  padding-top: 1rem;
+  justify-self: center;
+  flex-direction: column;
+  display:flex;
+  align-items: center;
+  width:250px;
+}
+
+a{
+  color: inherit;
+} 
+
+.logoItem i{
+  font-size: 3rem;
+  position: relative;
+  top: 0;
+  transition: top ease 0.5s;
+}
+
+.logoItem i:hover{
+  top: -15px;
+  color: white;
+}
