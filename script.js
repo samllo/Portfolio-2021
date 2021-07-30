@@ -91,7 +91,7 @@ $(document).ready(function(){
   });
 });
 
-//
+//class add and removal for image transition on carousel
 $(document).ready(function() {
   "use strict";
   // Invoke function here
@@ -123,4 +123,26 @@ $(document).ready(function() {
   $('div#containerCarousel').mouseup(callMeTwice);
 });
 
+// Email & phone pop up & copy to clipbpard
 
+// copy to clipboard
+function copyToClipboard(text) {
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val(text).select();
+  document.execCommand("copy");
+  $temp.remove();
+}
+
+//appends an "active" class to .popup and .popup-content when the "Open" button is clicked
+$(".emailOpen").on("click", function() {
+  $(".email-popup-overlay, .email-popup-content").addClass("active");
+  copyToClipboard("sam.thomas.lloyd@gmail.com");
+  // fixes buggy lingering X on popup
+});
+
+//removes the "active" class to .popup and .popup-content when the "Close" button is clicked 
+$(".emailClose").on("click", function() {
+  $(".email-popup-overlay, .email-popup-content").removeClass("active");
+  $('.emailClose:hover').css('transition', 'all 0s ease-in-out 0s'); // fixes buggy lingering X on popup, removes transition time
+});
