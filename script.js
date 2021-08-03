@@ -136,13 +136,26 @@ function copyToClipboard(text) {
 
 //appends an "active" class to .popup and .popup-content when the "Open" button is clicked
 $(".emailOpen").on("click", function() {
-  $(".email-popup-overlay, .email-popup-content").addClass("active");
+  $('.popup-overlay.emailpop , .popup-content.emailpop').addClass("active");
   copyToClipboard("sam.thomas.lloyd@gmail.com");
   // fixes buggy lingering X on popup
 });
 
 //removes the "active" class to .popup and .popup-content when the "Close" button is clicked 
 $(".emailClose").on("click", function() {
-  $(".email-popup-overlay, .email-popup-content").removeClass("active");
-  $('.emailClose:hover').css('transition', 'all 0s ease-in-out 0s'); // fixes buggy lingering X on popup, removes transition time
+  $('.popup-overlay.emailpop , .popup-content.emailpop').removeClass("active");
+  $('.closeX:hover').css('transition', 'all 0s ease-in-out 0s'); // fixes buggy lingering X on popup, removes transition time
+});
+
+//appends an "active" class to .popup and .popup-content when the "Open" button is clicked
+$(".mobileOpen").on("click", function() {
+  $('.popup-overlay.mobilepop , .popup-content.mobilepop').addClass("active");
+  copyToClipboard("07543 554 162");
+  // fixes buggy lingering X on popup
+});
+
+//removes the "active" class to .popup and .popup-content when the "Close" button is clicked 
+$(".mobileClose").on("click", function() {
+  $('.popup-overlay.mobilepop , .popup-content.mobilepop').removeClass("active");
+  $('.closeX:hover').css('transition', 'all 0s ease-in-out 0s'); // fixes buggy lingering X on popup, removes transition time
 });

@@ -178,28 +178,39 @@
 
       <div class="carouselSlide"> 
         <div class="carouselColumns">
-          <img class ="crslImgs" src="Carousel-Imgs/ShoppingListPage.png">
+          <a class="imgArea" href="https://samllo.github.io/InternetTimeline/"><img class="crslImgs" src="images/TimelinePage.png"></a>
           <ul class="crslSkills">
             <li>HTML</li>
             <li>CSS</li>
             <li>JavaScript</li>
           </ul>
         </div>
-        <span>
-          <h3>Slide  1</h3> 
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum mod possimus deserunt at nobis consectetur recusandae ex deleniti harum sit tempore, tempora iusto assumenda delectus, error distinctio illo vitae praesentium?
+        
+        <span class="crslContent">
+          <h3>Timeline of the Internet</h3> 
+          A responsive Timeline documenting key moments in the development of the Internet. Utilises JavaScript to animate date points as they enter the viewport.
         </span>
       </div>
+      
     </div> 
   </div>
 </div>
 
 <!--popup content-->
-<div class="email-popup-overlay">
-  <div class="email-popup-content">
-    <p class="popupText">copied to clipboard</p>
+
+<div class="popup-overlay emailpop">
+  <div class="popup-content emailpop">
+    <p class="popupText">Email copied to clipboard.</p>
     <!--popup's close button-->
-    <button class="emailClose">×</button> 
+    <button class="emailClose closeX">×</button> 
+  </div>
+</div>
+
+<div class="popup-overlay mobilepop">
+  <div class="popup-content mobilepop">
+    <p class="popupText">Number copied to clipboard.</p>
+    <!--popup's close button-->
+    <button class="mobileClose closeX">×</button> 
   </div>
 </div>
 
@@ -211,7 +222,7 @@
     <div class="logoItem"><a href="https://github.com/samllo"><i class="fab fa-github"></i></a>Github</div>
     <div class="logoItem"><a href="https://www.freecodecamp.org/samlloyd"><i class="fab fa-free-code-camp"></i></a>FreeCodeCamp</div>
     <div class="logoItem"><a class="emailOpen"><i class="far fa-envelope"></i></a>Email</div>
-    <div class="logoItem"><i class="fas fa-mobile-alt"></i>Mobile</div>
+    <div class="logoItem"><a class="mobileOpen"><i class="fas fa-mobile-alt"></i></a>Mobile</div>
     <div class="logoItem"><a href="/images/Sam Lloyd - Frontend Dev CV .docx" download="SamLloydCV"><i class="far fa-file"></i></a>CV</div>
   </div>
 </div>
