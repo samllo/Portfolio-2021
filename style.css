@@ -90,6 +90,7 @@ h2{
 }
 #aboutImg{
   width: 25%;
+  object-fit: cover; 
 }
 /* loading ring*/
 #loading{
