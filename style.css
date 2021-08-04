@@ -292,7 +292,6 @@ h2{
   overflow:hidden;
 }
 
-
 .crslContent{
   justify-self: flex-end;
   padding: 1rem;
@@ -318,6 +317,29 @@ h2{
   z-index: 10;
 }
 
+.sourceCodeLink{
+  position: absolute;
+  font-size: 2em;
+  color:black;
+  bottom: 2%;
+  left: 2%;
+  z-index:12;
+}
+
+.sourceCodeLink:hover{
+  color: white;
+}
+
+.sourceCodeLink.notopen{
+  visibility: hidden;
+
+}
+
+.sourceCodeLink.open{
+  visibility: visible;
+}
+
+
 .crslSkills{
   flex: 40%;
   width:40%;
@@ -337,6 +359,7 @@ h2{
 }
 
 .crslSkills.notopen{
+  visibility: hidden;
   opacity:0;
   position: relative;
   z-index: 1;
@@ -352,6 +375,7 @@ h2{
 }
 
 .crslImgs.notopen{
+  visibility: hidden;
   transform: translate3d(70%,0,0);
   color:white;
 }

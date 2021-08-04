@@ -102,6 +102,8 @@ $(document).ready(function() {
     $('div.slick-slide').find('ul.crslSkills').addClass('notopen');
     $('div.slick-slide').find('img.crslImgs').removeClass('open');
     $('div.slick-slide').find('img.crslImgs').addClass('notopen');
+    $('div.slick-slide').find('i.sourceCodeLink').removeClass('open');
+    $('div.slick-slide').find('i.sourceCodeLink').addClass('notopen');
   }
   // Invoke function again within the click event here
   $('div#containerCarousel').click(callMeT);
@@ -117,8 +119,10 @@ $(document).ready(function() {
     $('div.slick-center').find('ul.crslSkills').addClass('open');
     $('div.slick-center').find('img.crslImgs').removeClass('notopen');
     $('div.slick-center').find('img.crslImgs').addClass('open');
+    $('div.slick-center').find('i.sourceCodeLink').removeClass('notopen');
+    $('div.slick-center').find('i.sourceCodeLink').addClass('open');
   }
-  // Invoke your function again within the click event here
+  // Invoke function again within the click event 
   $('div#containerCarousel').click(callMeTwice);
   $('div#containerCarousel').mouseup(callMeTwice);
 });
