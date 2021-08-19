@@ -16,6 +16,17 @@ body {
   font-size: 1em;
 }
 
+/*responsive text for mobile*/
+@media only screen and (max-width: 768px) {
+  body{
+    font-size: 1.2em;
+  }
+  .carouselSlide{ 
+    font-size: 0.8em;
+  }
+
+}
+
 h3{
   font-family: 'Helvetica', 'Arial', sans-serif;
   font-size: 2em;
@@ -31,7 +42,6 @@ p{
 .content{
   margin:10%;
 }
-
 
 /*header styling*/
 header{
@@ -58,6 +68,18 @@ header{
   white-space: nowrap;/*have text keep its shape when sliding out*/
 }
 
+/*responsive header for mobile*/
+@media only screen and (max-width: 768px) {
+  #hello{
+  font-size:2em ;
+  }
+  #vertical-rl {  
+    margin-left:0%;
+  }
+  #horizontalH{
+    margin-left:-40%;
+  }
+}
 /*fade container styling(*/
 .fadeContainer{
   opacity: 0;
@@ -91,6 +113,21 @@ h2{
 #aboutImg{
   width: 25%;
   object-fit: cover; 
+}
+
+/*about section flex direction change for mobile*/
+@media only screen and (max-width: 768px) {
+  #aboutMe{
+    display: flex; 
+    flex-direction: column-reverse;
+  }
+  #aboutTxt{
+    width: 100%;
+  }
+  #aboutImg{
+    width: 100%;
+    object-fit: cover; 
+  }
 }
 /* loading ring*/
 #loading{
