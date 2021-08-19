@@ -315,7 +315,10 @@ h2{
 .crslImgs{
   width:100%;
   position: relative;
+  display:block;
   z-index: 10;
+  bottom: 0;
+  left: 0;
 }
 
 .sourceCodeLink{
@@ -347,6 +350,7 @@ h2{
   align-self: flex-end;
   list-style-type: none;
   padding: 0.5rem;
+  margin-top: 0;
   margin-bottom:0;
   padding-bottom:0;
   position: relative;
