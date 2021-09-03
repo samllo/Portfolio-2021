@@ -14,8 +14,6 @@ var currPosition = ele.position().left + 5 ;
 var trackLength = 50;
 $(window).scroll(function (event) {
 current = $(window).scrollTop();
-console.log({total:total,current:current});
-console.log(current/total * 100);
 var newPosition = trackLength * (current/total)
 ele.css({left:currPosition+newPosition+'%'});
 });
