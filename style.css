@@ -71,7 +71,7 @@ header{
 /*responsive header for mobile*/
 @media only screen and (max-width: 768px) {
   #hello{
-  font-size:2em ;
+  font-size:1.8em ;
   }
   #vertical-rl {  
     margin-left:0%;
